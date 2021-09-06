@@ -1,0 +1,69 @@
+import java.util.Scanner;
+class Calculator
+{
+    
+    public static void main(String args[])
+    {
+       
+    while(true)
+    {    
+        Scanner sc = new Scanner(System.in);
+        System.out.println("+ - * /");
+        String cal = sc.next();
+        if (cal.equals("+"))
+        {   
+            System.out.println("Enter the values >>");
+            int a = sc.nextInt();
+            System.out.println("+");
+            int b = sc.nextInt();
+            int add = a+b;
+            System.out.println(">>"+add);
+        }
+        else if(cal.equals("-"))
+        {
+            System.out.println("Enter the values >>");
+            int a = sc.nextInt();
+            System.out.println("-");
+            int b = sc.nextInt();
+            int sub = a-b;
+            System.out.println(">>"+sub);
+        }
+        else if(cal.equals("*"))
+        {
+            System.out.println("Enter the values >>");
+            int a = sc.nextInt();
+            System.out.println("x");
+            int b = sc.nextInt();
+            int multi = a*b;
+            System.out.println(">>"+multi);
+        }
+        else if(cal.equals("/"))
+        {
+            System.out.println("Enter the values >>");
+            int a = sc.nextInt();
+            System.out.println("/");
+            int b = sc.nextInt();
+            int devide = a/b;
+            System.out.println(">>"+devide);
+        }
+        else 
+        {
+            System.out.println("an error occured!");
+            System.out.println("Do you want Help(y/n)");
+            String error = sc.next();
+            if (error.equals("y"))
+            {
+                System.out.println("First enter the operator You want");
+                System.out.println("Then enter the integer and Click 'Enter'");
+                System.out.println("And enter Another Integer You want and Click 'Enter'");
+                System.out.println("BOOM Here is your Output");
+            }
+            
+        }
+    }
+        
+        
+
+    }
+
+}
